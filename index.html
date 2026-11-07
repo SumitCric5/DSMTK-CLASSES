@@ -20,6 +20,7 @@
   <meta property="twitter:title" content="DMTK Coaching Classes | Official Learning App">
   <meta property="twitter:description" content="Join DMTK Coaching Classes for Class 1 to 6. Batches run 9:00 AM - 6:00 PM. Download the official app now!">
   <meta property="twitter:image" content="https://placehold.co/1200x630/4F46E5/ffffff?text=DMTK+Coaching+Classes">
+  <!-- Meta Pixel Code -->
   <script>
     !function(f,b,e,v,n,t,s)
     {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -29,12 +30,13 @@
     t.src=v;s=b.getElementsByTagName(e)[0];
     s.parentNode.insertBefore(t,s)}(window, document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', 'YOUR_PIXEL_ID_HERE');
+    fbq('init', '1687727323371550');
     fbq('track', 'PageView');
   </script>
   <noscript>
-    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=YOUR_PIXEL_ID_HERE&ev=PageView&noscript=1"/>
+    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1687727323371550&ev=PageView&noscript=1"/>
   </noscript>
+  <!-- End Meta Pixel Code -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -83,7 +85,7 @@
       <div class="clean-card bg-violet-50/90 border border-violet-100 rounded-2xl p-4 text-center flex flex-col items-center justify-center shadow-sm"><span class="text-base font-bold text-violet-950">FARIDABAD</span><span class="text-xs font-semibold text-violet-700/90 mt-1">6:00 PM</span></div>
       <div class="clean-card bg-sky-50/90 border border-sky-100 rounded-2xl p-4 text-center flex flex-col items-center justify-center shadow-sm"><span class="text-base font-bold text-sky-950">GAZIYABAD</span><span class="text-xs font-semibold text-sky-700/90 mt-1">9:30 PM</span></div>
       <div class="clean-card bg-amber-50/90 border border-amber-100 rounded-2xl p-4 text-center flex flex-col items-center justify-center shadow-sm"><span class="text-base font-bold text-amber-950">GALI</span><span class="text-xs font-semibold text-amber-800/90 mt-1">11:30 PM</span></div>
-      <div class="clean-card bg-teal-50/90 border border-teal-100 rounded-2xl p-4 text-center flex flex-col items-center justify-center shadow-sm"><span class="text-base font-bold text-teal-950">DESAWAR</span><span class="text-xs font-semibold text-teal-800/90 mt-1">4:30 AM </span></div>
+      <div class="clean-card bg-teal-50/90 border border-teal-100 rounded-2xl p-4 text-center flex flex-col items-center justify-center shadow-sm"><span class="text-base font-bold text-teal-950">DESAWAR</span><span class="text-xs font-semibold text-teal-800/90 mt-1">4:30 AM</span></div>
     </section>
     <aside class="w-full bg-slate-100/70 border border-slate-200/80 rounded-2xl p-4 text-center">
       <p class="text-[11px] leading-relaxed text-slate-500 font-normal"><strong class="font-semibold text-slate-700">Disclaimer:</strong> We are DMTK Coaching Classes, an educational coaching institute dedicated to guiding students from Class 1 to Class 6.</p>
@@ -99,23 +101,21 @@
   </div>
   <script>
     function handleMetaDownload(event, targetUrl) {
-      if (event.ctrlKey || event.metaKey || event.shiftKey) {
-        if (typeof fbq === 'function') {
-          fbq('track', 'Subscribe');
-          fbq('trackCustom', 'AppDownloadClick');
-        }
-        return;
-      }
-      event.preventDefault();
+      // Record the requested Subscribe event before navigating to the app download.
       if (typeof fbq === 'function') {
-        fbq('track', 'Subscribe', { content_name: 'DMTK App Download', status: 'success' });
-        fbq('trackCustom', 'AppDownloadClick');
+        fbq('track', 'Subscribe', { content_name: 'DMTK App Download' });
       }
+
+      // Preserve browser behavior for modifier/middle clicks; the click event is still tracked.
+      if (event.ctrlKey || event.metaKey || event.shiftKey || event.button === 1) return;
+
+      event.preventDefault();
+      // Give the Pixel a moment to dispatch the event before navigating.
       setTimeout(function() {
         if (targetUrl && targetUrl !== '#' && !targetUrl.startsWith('javascript:')) {
           window.location.href = targetUrl;
         }
-      }, 150);
+      }, 300);
     }
   </script>
 </body>
