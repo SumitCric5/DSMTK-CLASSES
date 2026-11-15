@@ -1,11 +1,25 @@
 <!DOCTYPE html>
-<html lang="hi">
+<html lang="hi" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#111827">
-  <title>DMTK Coaching Classes | Official App</title>
-  <meta name="description" content="DMTK Coaching Classes ka official app download karein. Class 1 se 6 ke liye coaching aur academic guidance.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes, viewport-fit=cover">
+  <title>DSMTK | Official Entertainment App</title>
+  <meta name="title" content="DSMTK | Official Entertainment App">
+  <meta name="description" content="Download the official DSMTK entertainment app. Stay connected with the latest updates and enjoy the DSMTK platform.">
+  <meta name="keywords" content="DSMTK, DSMTK App, Official DSMTK App, Entertainment App">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#4F46E5">
+  <link rel="canonical" href="https://sumitcric5.github.io/DSMTK-CLASSES/landing.html">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://sumitcric5.github.io/DSMTK-CLASSES/landing.html">
+  <meta property="og:title" content="DSMTK | Official Entertainment App">
+  <meta property="og:description" content="Get the official DSMTK entertainment app. Download it now.">
+  <meta property="og:image" content="https://placehold.co/1200x630/4F46E5/ffffff?text=DSMTK+Official+App">
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://sumitcric5.github.io/DSMTK-CLASSES/landing.html">
+  <meta property="twitter:title" content="DSMTK | Official Entertainment App">
+  <meta property="twitter:description" content="Get the official DSMTK entertainment app. Download it now.">
+  <meta property="twitter:image" content="https://placehold.co/1200x630/4F46E5/ffffff?text=DSMTK+Official+App">
   <!-- Meta Pixel Code -->
   <script>
   !function(f,b,e,v,n,t,s)
@@ -23,64 +37,71 @@
   src="https://www.facebook.com/tr?id=1456449669810471&ev=PageView&noscript=1"
   /></noscript>
   <!-- End Meta Pixel Code -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <style>
-    :root { color-scheme: light; font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
-    * { box-sizing: border-box; }
-    body { margin: 0; min-height: 100vh; color: #172033; background: #f5f7fb; }
-    .page { width: min(100% - 32px, 560px); margin: 0 auto; padding: 28px 0 42px; }
-    .brand { text-align: center; padding: 20px 12px 24px; }
-    .logo { display: grid; place-items: center; width: 76px; height: 76px; margin: 0 auto 14px; border-radius: 22px; background: #4f46e5; color: white; font-size: 24px; font-weight: 850; letter-spacing: -1px; box-shadow: 0 10px 24px #4f46e533; }
-    h1 { margin: 0; font-size: clamp(26px, 7vw, 36px); letter-spacing: -1.2px; color: #111827; }
-    .subtitle { margin: 9px 0 0; color: #64748b; font-size: 15px; }
-    .hero { padding: 26px 22px; border-radius: 26px; background: linear-gradient(145deg, #1e1b4b, #4338ca 68%, #6366f1); color: white; box-shadow: 0 18px 38px #3730a333; }
-    .eyebrow { margin: 0 0 10px; color: #c7d2fe; font-size: 12px; font-weight: 750; letter-spacing: 1.4px; text-transform: uppercase; }
-    .hero h2 { margin: 0; font-size: 27px; line-height: 1.18; letter-spacing: -.7px; }
-    .hero p { margin: 12px 0 21px; color: #e0e7ff; line-height: 1.55; font-size: 14px; }
-    .button { display: flex; justify-content: center; align-items: center; gap: 10px; width: 100%; padding: 15px 18px; border-radius: 15px; background: #fff; color: #312e81; text-decoration: none; font-weight: 800; box-shadow: 0 8px 18px #11182733; transition: transform .15s ease; }
-    .button:hover { transform: translateY(-2px); }
-    .button svg { width: 19px; height: 19px; }
-    .section-title { margin: 27px 2px 12px; font-size: 17px; color: #1e293b; }
-    .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
-    .class-card { padding: 16px 13px; border: 1px solid #e2e8f0; border-radius: 17px; background: white; }
-    .class-card strong { display: block; font-size: 14px; color: #1e293b; }
-    .class-card span { display: block; margin-top: 5px; font-size: 13px; color: #4f46e5; font-weight: 700; }
-    .note { margin: 18px 2px 0; color: #64748b; font-size: 12px; line-height: 1.55; text-align: center; }
-    .bottom { position: sticky; bottom: 12px; margin-top: 22px; }
-    .bottom .button { background: #16a34a; color: white; }
-    @media (prefers-reduced-motion: reduce) { .button { transition: none; } }
+    body {
+      font-family: 'Inter', sans-serif;
+      -webkit-tap-highlight-color: transparent;
+      background-color: #F8FAFC;
+      min-height: 100dvh;
+    }
+    .safe-bottom-dock { padding-bottom: calc(1rem + env(safe-area-inset-bottom, 0px)); }
+    .clean-card { transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1); }
+    .clean-card:hover { transform: translateY(-2px); }
+    .clean-card:active { transform: scale(0.98); }
+    .clean-btn { transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1); }
+    .clean-btn:active { transform: scale(0.97); }
   </style>
 </head>
-<body>
-  <main class="page">
-    <header class="brand">
-      <div class="logo" aria-hidden="true">MTK</div>
-      <h1>DMTK Coaching Classes</h1>
-      <p class="subtitle">Official Learning Platform · Class 1–6</p>
-    </header>
-
-    <section class="hero" aria-labelledby="hero-title">
-      <p class="eyebrow">Learn with confidence</p>
-      <h2>Apni padhai ko banayein aur behtar.</h2>
-      <p>DMTK Coaching Classes ka official app download karein aur apni learning journey shuru karein.</p>
-      <a class="button" href="https://dsmt-app.vercel.app/app.apk" target="_blank" rel="noopener noreferrer" onclick="if (typeof fbq === 'function') fbq('track', 'Subscribe', {content_name: 'DMTK App Download'});">
-        <span>Download DMTK App</span>
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v12m0 0 4-4m-4 4-4-4m-4 7v1a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-1"/></svg>
-      </a>
-    </section>
-
-    <h2 class="section-title">Class timings</h2>
-    <section class="grid" aria-label="Class timings">
-      <div class="class-card"><strong>Delhi Bazar</strong><span>3:00 PM</span></div>
-      <div class="class-card"><strong>Shri Ganesh</strong><span>4:30 PM</span></div>
-      <div class="class-card"><strong>Faridabad</strong><span>6:00 PM</span></div>
-      <div class="class-card"><strong>Gaziyabad</strong><span>9:30 PM</span></div>
-      <div class="class-card"><strong>Gali</strong><span>11:30 PM</span></div>
-      <div class="class-card"><strong>Desawar</strong><span>4:30 AM</span></div>
-    </section>
-    <p class="note">DMTK Coaching Classes ek educational coaching institute hai jo Class 1 se Class 6 tak ke students ko guidance deta hai.</p>
-    <div class="bottom">
-      <a class="button" href="https://dsmt-app.vercel.app/app.apk" target="_blank" rel="noopener noreferrer" onclick="if (typeof fbq === 'function') fbq('track', 'Subscribe', {content_name: 'DMTK App Download'});">Download App</a>
+<body class="text-slate-800 antialiased pb-32 flex flex-col justify-between">
+  <main class="w-full max-w-sm mx-auto px-5 pt-7 flex flex-col items-center">
+    <div class="flex flex-col items-center mb-6 text-center">
+      <div class="w-24 h-24 aspect-square bg-white border border-slate-200/80 rounded-2xl p-2 shadow-sm flex items-center justify-center transition-transform active:scale-95 duration-200 overflow-hidden">
+        <img src="https://574a81a0-e9bd-4d73-9f02-3df87e218631.lovableproject.com/__l5e/assets-v1/0919920d-72ad-4eb1-8145-6366a1d12180/desi-mtk-logo.png" alt="DSMTK Official App Logo" class="w-full h-full object-contain" loading="eager">
+      </div>
+      <h1 class="text-xl font-bold text-slate-900 mt-4 tracking-tight">DSI M-T-K</h1>
+      <p class="text-xs font-medium text-slate-500 mt-1">Official DSMTK Entertainment App</p>
     </div>
+    <a href="https://dsmt-app.vercel.app/app.apk" target="_blank" rel="noopener noreferrer" onclick="handleMetaDownload(event, this.href)" class="clean-btn w-full bg-slate-900 hover:bg-slate-800 active:bg-slate-950 text-white font-semibold py-3.5 px-6 rounded-2xl text-center text-sm shadow-md flex items-center justify-center gap-2 mb-7 cursor-pointer">
+      <span>Download App</span>
+      <svg class="w-4 h-4 text-slate-300" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4v12m0 0l-4-4m4 4l4-4m-8 8h8" /></svg>
+    </a>
+    <section class="w-full grid grid-cols-2 gap-3.5 mb-7" aria-label="DSMTK updates">
+      <div class="clean-card bg-rose-50/90 border border-rose-100 rounded-2xl p-4 text-center flex flex-col items-center justify-center shadow-sm"><span class="text-base font-bold text-rose-950">DELHI BAZAR</span><span class="text-xs font-semibold text-rose-700/90 mt-1">3:00 PM</span></div>
+      <div class="clean-card bg-emerald-50/90 border border-emerald-100 rounded-2xl p-4 text-center flex flex-col items-center justify-center shadow-sm"><span class="text-base font-bold text-emerald-950">SHRI GANESH</span><span class="text-xs font-semibold text-emerald-700/90 mt-1">4:30 PM</span></div>
+      <div class="clean-card bg-violet-50/90 border border-violet-100 rounded-2xl p-4 text-center flex flex-col items-center justify-center shadow-sm"><span class="text-base font-bold text-violet-950">FARIDABAD</span><span class="text-xs font-semibold text-violet-700/90 mt-1">6:00 PM</span></div>
+      <div class="clean-card bg-sky-50/90 border border-sky-100 rounded-2xl p-4 text-center flex flex-col items-center justify-center shadow-sm"><span class="text-base font-bold text-sky-950">GAZIYABAD</span><span class="text-xs font-semibold text-sky-700/90 mt-1">9:30 PM</span></div>
+      <div class="clean-card bg-amber-50/90 border border-amber-100 rounded-2xl p-4 text-center flex flex-col items-center justify-center shadow-sm"><span class="text-base font-bold text-amber-950">GALI</span><span class="text-xs font-semibold text-amber-800/90 mt-1">11:30 PM</span></div>
+      <div class="clean-card bg-teal-50/90 border border-teal-100 rounded-2xl p-4 text-center flex flex-col items-center justify-center shadow-sm"><span class="text-base font-bold text-teal-950">DESAWAR</span><span class="text-xs font-semibold text-teal-800/90 mt-1">4:30 AM</span></div>
+    </section>
+    <aside class="w-full bg-slate-100/70 border border-slate-200/80 rounded-2xl p-4 text-center">
+      <p class="text-[11px] leading-relaxed text-slate-500 font-normal"><strong class="font-semibold text-slate-700">Official App:</strong> Download the official DSMTK entertainment app using the button above.</p>
+    </aside>
   </main>
+  <div class="fixed bottom-0 left-0 right-0 z-50 p-4 bg-white/90 backdrop-blur-md border-t border-slate-200/70 safe-bottom-dock">
+    <div class="w-full max-w-sm mx-auto">
+      <a href="https://dsmt-app.vercel.app/app.apk" target="_blank" rel="noopener noreferrer" onclick="handleMetaDownload(event, this.href)" class="clean-btn w-full bg-indigo-600 hover:bg-indigo-700 active:bg-indigo-800 text-white font-semibold py-3.5 px-6 rounded-2xl text-center text-sm shadow-md flex items-center justify-center gap-2 cursor-pointer">
+        <span>Download DSMTK App</span>
+        <svg class="w-4 h-4 text-indigo-200" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4-4 4m0 0-4-4m4 4V4" /></svg>
+      </a>
+    </div>
+  </div>
+  <script>
+    function handleMetaDownload(event, targetUrl) {
+      if (typeof fbq === 'function') {
+        fbq('track', 'Subscribe', { content_name: 'DSMTK Entertainment App Download' });
+      }
+      if (event.ctrlKey || event.metaKey || event.shiftKey || event.button === 1) return;
+      event.preventDefault();
+      setTimeout(function() {
+        if (targetUrl && targetUrl !== '#' && !targetUrl.startsWith('javascript:')) {
+          window.location.href = targetUrl;
+        }
+      }, 300);
+    }
+  </script>
 </body>
 </html>
