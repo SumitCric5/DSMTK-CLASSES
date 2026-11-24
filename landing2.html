@@ -1,366 +1,454 @@
 
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
-  <title>DSMTK | Official Entertainment App</title>
-  <meta name="title" content="DSMTK | Official Entertainment App">
-  <meta name="description" content="Download the DSMTK app and explore the platform.">
-  <meta name="keywords" content="DSMTK, DSMTK App, Entertainment App">
-  <meta name="robots" content="index, follow">
-  <meta name="theme-color" content="#080D20">
+<title>DSMTK | Official Gaming App</title>
+<meta name="description" content="Discover the DSMTK mobile application. Visit the official app landing page.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#080914">
 
-  <link rel="canonical" href="https://sumitcric5.github.io/DSMTK-CLASSES/landing.html">
+<link rel="canonical" href="https://sumitcric5.github.io/DSMTK-CLASSES/landing.html">
 
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="DSMTK | Official App">
-  <meta property="og:description" content="Explore the DSMTK platform.">
-  <meta property="og:url" content="https://sumitcric5.github.io/DSMTK-CLASSES/landing.html">
-  <meta property="og:image" content="https://placehold.co/1200x630/080D20/ffffff?text=DSMTK">
+<meta property="og:type" content="website">
+<meta property="og:title" content="DSMTK | Official App">
+<meta property="og:description" content="Explore the DSMTK mobile application.">
+<meta property="og:url" content="https://sumitcric5.github.io/DSMTK-CLASSES/landing.html">
+<meta property="og:image" content="https://placehold.co/1200x630/10102b/ffffff?text=DSMTK+GAMING">
 
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="DSMTK | Official App">
-  <meta name="twitter:description" content="Explore the DSMTK platform.">
-  <meta name="twitter:image" content="https://placehold.co/1200x630/080D20/ffffff?text=DSMTK">
+<meta name="twitter:card" content="summary_large_image">
 
-  <!-- Meta Pixel Code -->
-  <script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
+<!-- META PIXEL -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
 
-  fbq('init', '1681203013387427');
-  fbq('track', 'PageView');
-  </script>
+fbq('init', '1681203013387427');
+fbq('track', 'PageView');
+</script>
 
-  <noscript>
-    <img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=1681203013387427&ev=PageView&noscript=1"
-    />
-  </noscript>
-  <!-- End Meta Pixel Code -->
+<noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1681203013387427&ev=PageView&noscript=1">
+</noscript>
+<!-- END META PIXEL -->
 
-  <script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
 
-  <style>
-    * {
-      box-sizing: border-box;
-    }
+<style>
+* {
+  box-sizing:border-box;
+}
 
-    body {
-      font-family: 'Inter', sans-serif;
-      background: #080D20;
-      color: #fff;
-      min-height: 100dvh;
-      -webkit-tap-highlight-color: transparent;
-    }
+:root {
+  --purple:#9333ea;
+  --blue:#6366f1;
+  --cyan:#22d3ee;
+}
 
-    .background-glow {
-      background:
-        radial-gradient(ellipse at 50% 0%, rgba(79,70,229,.22), transparent 55%),
-        radial-gradient(ellipse at 0% 60%, rgba(14,165,233,.09), transparent 40%),
-        #080D20;
-    }
+body {
+  margin:0;
+  background:#080914;
+  color:white;
+  font-family:Inter,sans-serif;
+  min-height:100vh;
+  overflow-x:hidden;
+  -webkit-tap-highlight-color:transparent;
+}
 
-    .glass {
-      background: rgba(255,255,255,.045);
-      border: 1px solid rgba(255,255,255,.09);
-      backdrop-filter: blur(18px);
-      -webkit-backdrop-filter: blur(18px);
-    }
+.orbitron {
+  font-family:Orbitron,sans-serif;
+}
 
-    .logo-box {
-      background: linear-gradient(145deg,#fff,#dbeafe);
-      box-shadow: 0 0 45px rgba(99,102,241,.24);
-    }
+.bg-effects {
+  position:fixed;
+  inset:0;
+  pointer-events:none;
+  z-index:-1;
+  background:
+    radial-gradient(circle at 50% 5%,rgba(147,51,234,.23),transparent 35%),
+    radial-gradient(circle at 0% 55%,rgba(34,211,238,.09),transparent 30%),
+    radial-gradient(circle at 100% 75%,rgba(99,102,241,.13),transparent 30%);
+}
 
-    .download-btn {
-      background: linear-gradient(110deg,#4F46E5,#7C3AED);
-      box-shadow: 0 8px 30px rgba(79,70,229,.30);
-      transition: all .25s ease;
-    }
+.grid-bg {
+  position:fixed;
+  inset:0;
+  z-index:-1;
+  pointer-events:none;
+  opacity:.12;
+  background-image:
+    linear-gradient(rgba(139,92,246,.16) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(139,92,246,.16) 1px,transparent 1px);
+  background-size:35px 35px;
+  mask-image:linear-gradient(to bottom,black,transparent 85%);
+}
 
-    .download-btn:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 12px 35px rgba(79,70,229,.45);
-    }
+.glass {
+  background:rgba(255,255,255,.045);
+  border:1px solid rgba(255,255,255,.10);
+  backdrop-filter:blur(15px);
+  -webkit-backdrop-filter:blur(15px);
+}
 
-    .download-btn:active {
-      transform: scale(.97);
-    }
+.logo-box {
+  background:white;
+  border:2px solid rgba(167,139,250,.7);
+  box-shadow:0 0 25px rgba(147,51,234,.45),
+             0 0 70px rgba(99,102,241,.17);
+}
 
-    .market-card {
-      transition: transform .25s ease, border-color .25s ease;
-    }
+.neon-text {
+  background:linear-gradient(90deg,#c084fc,#818cf8,#22d3ee);
+  -webkit-background-clip:text;
+  background-clip:text;
+  color:transparent;
+}
 
-    .market-card:hover {
-      transform: translateY(-4px);
-      border-color: rgba(129,140,248,.45);
-    }
+.main-btn {
+  position:relative;
+  overflow:hidden;
+  background:linear-gradient(100deg,#7c3aed,#4f46e5,#0891b2);
+  box-shadow:0 0 25px rgba(124,58,237,.4);
+  transition:.25s ease;
+}
 
-    .market-dot {
-      width: 7px;
-      height: 7px;
-      border-radius: 50%;
-      display: inline-block;
-    }
+.main-btn:hover {
+  transform:translateY(-3px);
+  box-shadow:0 0 35px rgba(124,58,237,.65);
+}
 
-    .safe-bottom {
-      padding-bottom: calc(14px + env(safe-area-inset-bottom, 0px));
-    }
+.main-btn:active {
+  transform:scale(.97);
+}
 
-    .footer-gradient {
-      background: rgba(8,13,32,.88);
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
-    }
+.main-btn::before {
+  content:"";
+  position:absolute;
+  top:-100%;
+  left:-50%;
+  width:40%;
+  height:300%;
+  background:rgba(255,255,255,.15);
+  transform:rotate(30deg);
+  animation:shine 4s infinite;
+}
 
-    @media (prefers-reduced-motion: reduce) {
-      *, *::before, *::after {
-        scroll-behavior: auto !important;
-        transition: none !important;
-      }
-    }
-  </style>
+@keyframes shine {
+  0%,60% {left:-60%}
+  100% {left:150%}
+}
+
+.pulse-dot {
+  width:8px;
+  height:8px;
+  background:#34d399;
+  border-radius:50%;
+  box-shadow:0 0 12px #34d399;
+  animation:pulse 1.5s infinite;
+}
+
+@keyframes pulse {
+  50% {opacity:.35;transform:scale(.7)}
+}
+
+.market-card {
+  transition:.25s ease;
+}
+
+.market-card:hover {
+  transform:translateY(-4px);
+  border-color:rgba(167,139,250,.5);
+  background:rgba(139,92,246,.09);
+}
+
+.sticky-bar {
+  background:rgba(8,9,20,.92);
+  backdrop-filter:blur(20px);
+  border-top:1px solid rgba(255,255,255,.1);
+  padding-bottom:calc(12px + env(safe-area-inset-bottom));
+}
+
+@media(prefers-reduced-motion:reduce) {
+  *,*::before,*::after {
+    animation:none!important;
+    transition:none!important;
+  }
+}
+</style>
 </head>
 
-<body class="background-glow antialiased pb-32">
+<body class="pb-32">
 
-  <main class="max-w-md mx-auto px-5 pt-10">
+<div class="bg-effects"></div>
+<div class="grid-bg"></div>
 
-    <!-- BRAND HEADER -->
-    <header class="text-center mb-9">
+<main class="max-w-md mx-auto px-5 pt-8">
 
-      <div class="relative inline-block mb-5">
-        <div class="absolute inset-0 bg-indigo-500 blur-3xl opacity-25 rounded-full"></div>
+  <!-- TOP NAV -->
+  <header class="flex justify-between items-center mb-9">
+    <div class="flex items-center gap-2">
+      <div class="w-2 h-2 rounded-full bg-purple-400"></div>
+      <span class="orbitron text-xs font-bold tracking-wider">DSMTK</span>
+    </div>
 
-        <div class="logo-box relative w-28 h-28 rounded-[28px] p-3 flex items-center justify-center overflow-hidden">
-          <img
-            src="https://574a81a0-e9bd-4d73-9f02-3df87e218631.lovableproject.com/__l5e/assets-v1/0919920d-72ad-4eb1-8145-6366a1d12180/desi-mtk-logo.png"
-            alt="DSMTK Logo"
-            class="w-full h-full object-contain"
-            loading="eager"
-          >
-        </div>
+    <div class="glass rounded-full px-3 py-2 flex items-center gap-2">
+      <span class="pulse-dot"></span>
+      <span class="text-[9px] font-bold text-emerald-300 tracking-widest">
+        OFFICIAL APP
+      </span>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="text-center mb-8">
+
+    <div class="relative inline-block mb-6">
+      <div class="absolute inset-0 rounded-full bg-purple-500 blur-3xl opacity-30"></div>
+
+      <div class="logo-box relative w-28 h-28 rounded-3xl p-3 flex items-center justify-center overflow-hidden">
+        <img
+          src="https://574a81a0-e9bd-4d73-9f02-3df87e218631.lovableproject.com/__l5e/assets-v1/0919920d-72ad-4eb1-8145-6366a1d12180/desi-mtk-logo.png"
+          alt="DSMTK Logo"
+          class="w-full h-full object-contain"
+        >
       </div>
+    </div>
 
-      <h1 class="text-3xl font-black tracking-tight text-white">
-        DSI <span class="text-indigo-400">M-T-K</span>
-      </h1>
+    <p class="text-[10px] text-purple-300 font-bold tracking-[5px] mb-3">
+      WELCOME TO THE PLATFORM
+    </p>
 
-      <p class="text-xs text-slate-400 mt-2 tracking-[3px] uppercase font-semibold">
-        Official DSMTK Platform
-      </p>
+    <h1 class="orbitron text-3xl sm:text-4xl font-black leading-tight">
+      DSI <span class="neon-text">M-T-K</span>
+    </h1>
 
-      <div class="flex items-center justify-center gap-2 mt-4">
-        <span class="market-dot bg-emerald-400"></span>
-        <span class="text-[11px] text-emerald-300 font-semibold tracking-wider">
-          WELCOME TO DSMTK
+    <p class="text-sm text-slate-400 mt-4 leading-relaxed">
+      Your DSMTK mobile application experience starts here.
+    </p>
+
+    <div class="flex justify-center mt-5">
+      <div class="glass rounded-full px-4 py-2 text-[10px] text-slate-300">
+        <span class="text-purple-400">✦</span>
+        OFFICIAL DSMTK APPLICATION
+      </div>
+    </div>
+
+  </section>
+
+  <!-- DOWNLOAD CARD -->
+  <section class="glass rounded-3xl p-5 mb-7 relative overflow-hidden">
+
+    <div class="absolute -top-16 -right-16 w-40 h-40 bg-purple-600/20 blur-3xl rounded-full"></div>
+
+    <div class="relative">
+
+      <div class="flex items-center gap-2 mb-4">
+        <span class="text-purple-300 text-lg">✦</span>
+        <span class="text-[10px] font-bold tracking-[2px] text-purple-200">
+          GET THE APPLICATION
         </span>
       </div>
 
-    </header>
-
-    <!-- HERO SECTION -->
-    <section class="glass rounded-3xl p-6 text-center mb-6">
-
-      <div class="inline-flex items-center gap-2 bg-indigo-500/10 border border-indigo-400/20 rounded-full px-3 py-1.5 mb-4">
-        <svg class="w-4 h-4 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v2m7 1-1.4 1.4M21 12h-2M5 12H3m3.4-5.6L5 5m7 14v2m5-2 1.4 1.4M12 9a3 3 0 100 6 3 3 0 000-6z"/>
-        </svg>
-        <span class="text-[10px] text-indigo-300 font-bold tracking-wider uppercase">
-          DSMTK Application
-        </span>
-      </div>
-
-      <h2 class="text-2xl font-extrabold leading-tight mb-3">
-        Your Platform,<br>
-        <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400">
-          All In One Place.
-        </span>
+      <h2 class="orbitron text-xl font-bold leading-relaxed">
+        DSMTK <span class="neon-text">APP</span>
       </h2>
 
-      <p class="text-sm text-slate-400 leading-relaxed mb-6">
-        Get the DSMTK application and explore the platform from your mobile device.
+      <p class="text-xs text-slate-400 leading-relaxed mt-2 mb-6">
+        Access the official Android application using the download button below.
       </p>
 
+      <!-- SINGLE CLICK DOWNLOAD -->
       <a
         href="https://sumitcric5.github.io/DSMTK-CLASSES/desimatkaApp.apk"
         download="desimatkaApp.apk"
-        rel="noopener noreferrer"
-        onclick="handleMetaDownload()"
-        class="download-btn w-full py-4 px-5 rounded-2xl flex items-center justify-center gap-3 font-bold text-sm text-white"
+        id="downloadButton"
+        class="main-btn relative w-full rounded-2xl py-4 px-4 flex items-center justify-center gap-3 text-sm font-extrabold tracking-wide"
       >
-        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v12m0 0 5-5m-5 5-5-5M4 17v3h16v-3"/>
-        </svg>
-        DOWNLOAD DSMTK APP
-      </a>
-
-      <p class="text-[10px] text-slate-500 mt-4">
-        Android APK Application
-      </p>
-
-    </section>
-
-    <!-- MARKET SECTION -->
-    <section class="mb-6">
-
-      <div class="flex items-center justify-between mb-4 px-1">
-        <div>
-          <h2 class="text-lg font-extrabold text-white">
-            Market Schedule
-          </h2>
-          <p class="text-[11px] text-slate-500 mt-1">
-            Daily market timings
-          </p>
-        </div>
-
-        <div class="glass rounded-full px-3 py-2">
-          <span class="text-[10px] font-bold text-indigo-300">
-            DSMTK
-          </span>
-        </div>
-      </div>
-
-      <div class="grid grid-cols-2 gap-3">
-
-        <div class="market-card glass rounded-2xl p-4">
-          <div class="flex items-center gap-2 mb-3">
-            <span class="market-dot bg-rose-400"></span>
-            <span class="text-[9px] uppercase tracking-wider text-slate-400 font-bold">Market 01</span>
-          </div>
-          <h3 class="text-sm font-extrabold text-white">DELHI BAZAR</h3>
-          <p class="text-xs text-rose-300 font-semibold mt-2">3:00 PM</p>
-        </div>
-
-        <div class="market-card glass rounded-2xl p-4">
-          <div class="flex items-center gap-2 mb-3">
-            <span class="market-dot bg-emerald-400"></span>
-            <span class="text-[9px] uppercase tracking-wider text-slate-400 font-bold">Market 02</span>
-          </div>
-          <h3 class="text-sm font-extrabold text-white">SHRI GANESH</h3>
-          <p class="text-xs text-emerald-300 font-semibold mt-2">4:30 PM</p>
-        </div>
-
-        <div class="market-card glass rounded-2xl p-4">
-          <div class="flex items-center gap-2 mb-3">
-            <span class="market-dot bg-violet-400"></span>
-            <span class="text-[9px] uppercase tracking-wider text-slate-400 font-bold">Market 03</span>
-          </div>
-          <h3 class="text-sm font-extrabold text-white">FARIDABAD</h3>
-          <p class="text-xs text-violet-300 font-semibold mt-2">6:00 PM</p>
-        </div>
-
-        <div class="market-card glass rounded-2xl p-4">
-          <div class="flex items-center gap-2 mb-3">
-            <span class="market-dot bg-sky-400"></span>
-            <span class="text-[9px] uppercase tracking-wider text-slate-400 font-bold">Market 04</span>
-          </div>
-          <h3 class="text-sm font-extrabold text-white">GAZIYABAD</h3>
-          <p class="text-xs text-sky-300 font-semibold mt-2">9:30 PM</p>
-        </div>
-
-        <div class="market-card glass rounded-2xl p-4">
-          <div class="flex items-center gap-2 mb-3">
-            <span class="market-dot bg-amber-400"></span>
-            <span class="text-[9px] uppercase tracking-wider text-slate-400 font-bold">Market 05</span>
-          </div>
-          <h3 class="text-sm font-extrabold text-white">GALI</h3>
-          <p class="text-xs text-amber-300 font-semibold mt-2">11:30 PM</p>
-        </div>
-
-        <div class="market-card glass rounded-2xl p-4">
-          <div class="flex items-center gap-2 mb-3">
-            <span class="market-dot bg-teal-400"></span>
-            <span class="text-[9px] uppercase tracking-wider text-slate-400 font-bold">Market 06</span>
-          </div>
-          <h3 class="text-sm font-extrabold text-white">DESAWAR</h3>
-          <p class="text-xs text-teal-300 font-semibold mt-2">4:30 AM</p>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- INFORMATION -->
-    <section class="glass rounded-2xl p-5 mb-8">
-
-      <div class="flex items-start gap-3">
-        <div class="w-10 h-10 shrink-0 rounded-xl bg-indigo-500/15 flex items-center justify-center">
-          <svg class="w-5 h-5 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M12 22a10 10 0 110-20 10 10 0 010 20z"/>
-          </svg>
-        </div>
-
-        <div>
-          <h3 class="text-sm font-bold text-white mb-1">
-            Application Information
-          </h3>
-          <p class="text-xs leading-relaxed text-slate-400">
-            Use the download button to access the DSMTK APK. Only install applications from sources you trust and check applicable local laws before using related services.
-          </p>
-        </div>
-      </div>
-
-    </section>
-
-    <footer class="text-center pb-5">
-      <p class="text-[10px] text-slate-600">
-        © 2026 DSMTK. All Rights Reserved.
-      </p>
-    </footer>
-
-  </main>
-
-  <!-- STICKY DOWNLOAD BAR -->
-  <div class="fixed bottom-0 left-0 right-0 z-50 footer-gradient border-t border-white/10 safe-bottom px-5 pt-3">
-
-    <div class="max-w-md mx-auto">
-
-      <a
-        href="https://sumitcric5.github.io/DSMTK-CLASSES/desimatkaApp.apk"
-        download="desimatkaApp.apk"
-        rel="noopener noreferrer"
-        onclick="handleMetaDownload()"
-        class="download-btn w-full rounded-2xl py-4 px-5 flex items-center justify-center gap-3 text-sm font-extrabold text-white"
-      >
-        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+        <svg class="w-5 h-5 relative" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v12m0 0 5-5m-5 5-5-5M4 17v3h16v-3"/>
         </svg>
 
-        DOWNLOAD DSMTK APP
-
-        <span class="text-indigo-200 text-xs">↓</span>
+        <span class="relative">DOWNLOAD APK NOW</span>
       </a>
 
-      <p class="text-center text-[9px] text-slate-500 mt-2">
-        Official DSMTK Application
+      <div class="flex justify-center gap-5 mt-4 text-[9px] text-slate-500">
+        <span>ANDROID APK</span>
+        <span>•</span>
+        <span>OFFICIAL DOWNLOAD</span>
+      </div>
+
+      <p id="downloadStatus" class="text-center text-xs text-emerald-300 mt-3 hidden" aria-live="polite">
+        Your download has been requested.
       </p>
 
     </div>
-  </div>
+  </section>
 
-  <!-- DOWNLOAD TRACKING -->
-  <script>
-    function handleMetaDownload() {
-      if (typeof fbq === 'function') {
-        fbq('track', 'Subscribe', {
-          content_name: 'DSMTK Entertainment App Download'
-        });
-      }
-    }
-  </script>
+  <!-- PLATFORM FEATURES -->
+  <section class="mb-7">
+
+    <div class="flex justify-between items-center mb-4">
+      <h2 class="orbitron text-sm font-bold">PLATFORM INFO</h2>
+      <span class="text-[9px] text-purple-300 tracking-widest">DSMTK</span>
+    </div>
+
+    <div class="grid grid-cols-2 gap-3">
+
+      <div class="glass rounded-2xl p-4">
+        <div class="text-2xl mb-3">🎮</div>
+        <h3 class="text-xs font-bold">Mobile App</h3>
+        <p class="text-[10px] text-slate-500 mt-1">Android application</p>
+      </div>
+
+      <div class="glass rounded-2xl p-4">
+        <div class="text-2xl mb-3">⚡</div>
+        <h3 class="text-xs font-bold">Easy Access</h3>
+        <p class="text-[10px] text-slate-500 mt-1">Direct download link</p>
+      </div>
+
+      <div class="glass rounded-2xl p-4">
+        <div class="text-2xl mb-3">📱</div>
+        <h3 class="text-xs font-bold">Mobile Friendly</h3>
+        <p class="text-[10px] text-slate-500 mt-1">Responsive interface</p>
+      </div>
+
+      <div class="glass rounded-2xl p-4">
+        <div class="text-2xl mb-3">🔷</div>
+        <h3 class="text-xs font-bold">DSMTK Platform</h3>
+        <p class="text-[10px] text-slate-500 mt-1">Official app information</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- MARKET TIMINGS -->
+  <section class="mb-7">
+
+    <div class="flex items-center justify-between mb-4">
+      <h2 class="orbitron text-sm font-bold">MARKET SCHEDULE</h2>
+      <span class="text-[9px] text-slate-500">TIMINGS</span>
+    </div>
+
+    <div class="grid grid-cols-2 gap-3">
+
+      <div class="market-card glass rounded-xl p-4 border-l-2 border-rose-500">
+        <p class="text-[9px] text-slate-500 mb-2">MARKET 01</p>
+        <h3 class="text-xs font-extrabold">DELHI BAZAR</h3>
+        <p class="text-xs text-rose-300 mt-2 font-semibold">3:00 PM</p>
+      </div>
+
+      <div class="market-card glass rounded-xl p-4 border-l-2 border-emerald-500">
+        <p class="text-[9px] text-slate-500 mb-2">MARKET 02</p>
+        <h3 class="text-xs font-extrabold">SHRI GANESH</h3>
+        <p class="text-xs text-emerald-300 mt-2 font-semibold">4:30 PM</p>
+      </div>
+
+      <div class="market-card glass rounded-xl p-4 border-l-2 border-purple-500">
+        <p class="text-[9px] text-slate-500 mb-2">MARKET 03</p>
+        <h3 class="text-xs font-extrabold">FARIDABAD</h3>
+        <p class="text-xs text-purple-300 mt-2 font-semibold">6:00 PM</p>
+      </div>
+
+      <div class="market-card glass rounded-xl p-4 border-l-2 border-cyan-500">
+        <p class="text-[9px] text-slate-500 mb-2">MARKET 04</p>
+        <h3 class="text-xs font-extrabold">GAZIYABAD</h3>
+        <p class="text-xs text-cyan-300 mt-2 font-semibold">9:30 PM</p>
+      </div>
+
+      <div class="market-card glass rounded-xl p-4 border-l-2 border-amber-500">
+        <p class="text-[9px] text-slate-500 mb-2">MARKET 05</p>
+        <h3 class="text-xs font-extrabold">GALI</h3>
+        <p class="text-xs text-amber-300 mt-2 font-semibold">11:30 PM</p>
+      </div>
+
+      <div class="market-card glass rounded-xl p-4 border-l-2 border-teal-500">
+        <p class="text-[9px] text-slate-500 mb-2">MARKET 06</p>
+        <h3 class="text-xs font-extrabold">DESAWAR</h3>
+        <p class="text-xs text-teal-300 mt-2 font-semibold">4:30 AM</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- IMPORTANT INFORMATION -->
+  <section class="glass rounded-2xl p-4 mb-7">
+    <div class="flex gap-3">
+      <span class="text-xl">ⓘ</span>
+      <div>
+        <h3 class="text-xs font-bold mb-2">Important Information</h3>
+        <p class="text-[10px] text-slate-400 leading-relaxed">
+          This page provides information about the DSMTK application.
+          Only download software from sources you trust. Check applicable
+          local laws and age restrictions before accessing any related services.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="text-center pb-5">
+    <div class="orbitron text-sm font-bold mb-2">
+      <span class="neon-text">DSMTK</span>
+    </div>
+    <p class="text-[9px] text-slate-600">
+      © 2026 DSMTK. All Rights Reserved.
+    </p>
+  </footer>
+
+</main>
+
+<!-- STICKY DOWNLOAD BUTTON -->
+<div class="sticky-bar fixed bottom-0 left-0 right-0 z-50 px-5 pt-3">
+  <div class="max-w-md mx-auto">
+
+    <a
+      href="https://sumitcric5.github.io/DSMTK-CLASSES/desimatkaApp.apk"
+      download="desimatkaApp.apk"
+      class="main-btn w-full rounded-xl py-4 flex justify-center items-center gap-3 text-sm font-extrabold"
+      onclick="trackDownload()"
+    >
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v12m0 0 5-5m-5 5-5-5M4 17v3h16v-3"/>
+      </svg>
+      DOWNLOAD DSMTK APP
+    </a>
+
+    <p class="text-center text-[9px] text-slate-500 mt-2">
+      Official Android Application
+    </p>
+
+  </div>
+</div>
+
+<!-- META DOWNLOAD EVENT -->
+<script>
+function trackDownload() {
+  if (typeof fbq === 'function') {
+    fbq('trackCustom', 'AppDownloadClick', {
+      content_name: 'DSMTK Android App',
+      content_type: 'mobile_application'
+    });
+  }
+}
+
+document.getElementById('downloadButton').addEventListener('click', function() {
+  const status = document.getElementById('downloadStatus');
+  status.classList.remove('hidden');
+  trackDownload();
+});
+</script>
 
 </body>
 </html>
