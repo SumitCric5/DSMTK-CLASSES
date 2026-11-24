@@ -5,232 +5,156 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>DSMTK | Official App</title>
-<meta name="theme-color" content="#f8f6f0">
-<meta name="description" content="Official DSMTK application download page.">
-<meta property="og:title" content="DSMTK Official App">
-<meta property="og:description" content="Download the DSMTK Android application.">
-<meta property="og:image" content="https://placehold.co/1200x630/171717/d6b46a?text=DSMTK">
+<meta name="description" content="Discover DSMTK. Download the official Android app.">
+<meta name="theme-color" content="#101010">
 
-<!-- META PIXEL -->
+<!-- Meta Pixel -->
 <script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+!function(f,b,e,v,n,t,s){
+if(f.fbq)return;n=f.fbq=function(){n.callMethod?
 n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';
 n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1681203013387427');
-fbq('track', 'PageView');
+s.parentNode.insertBefore(t,s)
+}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','1681203013387427');
+fbq('track','PageView');
 </script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1681203013387427&ev=PageView&noscript=1"></noscript>
-<!-- END PIXEL -->
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Orbitron:wght@600;700;800&display=swap" rel="stylesheet">
+<noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1681203013387427&ev=PageView&noscript=1" alt="">
+</noscript>
 
 <style>
 *{box-sizing:border-box}
 body{
- margin:0;
- background:#f8f6f0;
- color:#171717;
- font-family:Inter,sans-serif;
- min-height:100vh;
- display:flex;
- justify-content:center;
- padding:22px 16px 100px;
+margin:0;background:#101010;color:#fff;
+font-family:Arial,Helvetica,sans-serif;
+min-height:100vh;overflow-x:hidden;
 }
-.page{width:100%;max-width:410px}
-.gold{color:#b28b3e}
-.orbit{font-family:Orbitron,sans-serif}
+body:before{
+content:"";position:fixed;inset:0;z-index:-1;
+background:
+radial-gradient(circle at 15% 10%,#d99c2520,transparent 30%),
+radial-gradient(circle at 90% 70%,#7c4dff12,transparent 28%);
+}
+.wrap{
+width:min(100% - 28px,460px);
+margin:auto;padding:16px 0 95px;text-align:center;
+}
+.topline{
+display:flex;align-items:center;justify-content:center;
+gap:7px;color:#d9b45d;font-size:10px;
+font-weight:700;letter-spacing:2px;text-transform:uppercase;
+}
+.dot{
+width:7px;height:7px;border-radius:50%;
+background:#54e69a;box-shadow:0 0 10px #54e69a;
+}
 .logo{
- width:94px;height:94px;
- background:#fff;
- border:1px solid #e6d8b5;
- border-radius:23px;
- padding:8px;
- margin:auto;
- box-shadow:0 8px 25px #0000000c;
+width:76px;height:76px;object-fit:contain;
+margin:12px auto 5px;
+filter:drop-shadow(0 0 13px #d6a83b55);
 }
-.logo img{width:100%;height:100%;object-fit:contain}
-.header{text-align:center;margin:15px 0 22px}
-.header h1{font-size:27px;margin:12px 0 5px;font-weight:900;letter-spacing:1px}
-.header p{font-size:11px;color:#777;margin:0}
-.hero{
- background:linear-gradient(145deg,#171717,#29251d);
- border-radius:25px;
- padding:23px 19px;
- color:white;
- text-align:center;
- position:relative;
- overflow:hidden;
- box-shadow:0 12px 30px #17171720;
+h1{
+margin:4px 0 12px;font-size:clamp(26px,8vw,34px);
+line-height:1.05;font-weight:900;letter-spacing:1px;
 }
-.hero:before{
- content:"";
- position:absolute;
- width:180px;height:180px;
- border:1px solid #c9a65320;
- border-radius:50%;
- top:-115px;right:-45px;
-}
-.hero-tag{
- font-size:9px;
- letter-spacing:3px;
- color:#d7bd7b;
- font-weight:700;
-}
-.hero h2{font-size:23px;margin:13px 0 8px}
-.hero p{font-size:11px;color:#c4c4c4;line-height:1.6;margin:0 0 20px}
+h1 span{color:#f1c66b;text-shadow:0 0 18px #e5a52b55}
 .download{
- display:flex;
- justify-content:center;
- align-items:center;
- gap:10px;
- text-decoration:none;
- color:#171717;
- font-size:13px;
- font-weight:900;
- background:linear-gradient(110deg,#c8a85e,#f0d99b,#c8a85e);
- background-size:200% auto;
- padding:16px;
- border-radius:14px;
- box-shadow:0 5px 18px #c8a85e35;
- animation:goldmove 4s linear infinite;
- transition:.2s;
+display:flex;align-items:center;justify-content:center;
+gap:9px;width:100%;min-height:52px;
+border:1px solid #ffe3a0;border-radius:13px;
+background:linear-gradient(110deg,#b77c1e,#f5d37e,#c28b2d);
+color:#17120a;font-size:16px;font-weight:900;
+text-decoration:none;box-shadow:0 5px 24px #dba63c38;
+animation:glow 2.2s infinite alternate;
 }
-.download:active{transform:scale(.97)}
-@keyframes goldmove{
- to{background-position:200% center}
+@keyframes glow{
+from{box-shadow:0 4px 14px #dba63c25}
+to{box-shadow:0 4px 25px #dba63c75}
+}
+.download:active{transform:scale(.98)}
+.hint{font-size:10px;color:#999;margin:8px 0 16px}
+.section-title{
+margin:15px 0 9px;font-size:12px;
+letter-spacing:1.5px;color:#e8c16c;
+font-weight:800;text-transform:uppercase;
+}
+.markets{
+display:grid;grid-template-columns:repeat(2,1fr);gap:7px;
 }
 .market{
- margin-top:22px;
- background:white;
- border:1px solid #eee8db;
- border-radius:20px;
- padding:17px;
+display:flex;align-items:center;justify-content:space-between;
+gap:5px;padding:11px 10px;
+border:1px solid #ffffff16;border-radius:9px;
+background:#ffffff08;font-size:10px;
 }
-.section-title{
- display:flex;
- justify-content:space-between;
- align-items:center;
- margin-bottom:13px;
+.market strong{color:#f0c66d;font-size:10px}
+.market span{color:#c5c5c5}
+.footer{
+margin-top:16px;color:#777;font-size:9px;line-height:1.5;
 }
-.section-title h3{font-size:13px;margin:0;font-weight:800}
-.section-title span{font-size:9px;color:#b28b3e;font-weight:800}
-.markets{
- display:grid;
- grid-template-columns:repeat(3,1fr);
- gap:9px;
+.sticky-download{
+position:fixed;bottom:0;left:0;right:0;z-index:10;
+padding:10px 14px calc(10px + env(safe-area-inset-bottom));
+background:linear-gradient(180deg,transparent,#101010 18%);
 }
-.market-item{
- background:#f8f6f0;
- border:1px solid #eee9dd;
- border-radius:12px;
- padding:12px 5px;
- text-align:center;
-}
-.market-item b{display:block;font-size:9px}
-.market-item small{display:block;font-size:10px;color:#a27b32;margin-top:5px;font-weight:700}
-.notice{
- text-align:center;
- color:#777;
- font-size:9px;
- line-height:1.6;
- margin:16px 5px;
-}
-footer{text-align:center;color:#999;font-size:9px;margin-top:17px}
-.sticky{
- position:fixed;
- bottom:0;left:0;right:0;
- padding:12px 16px calc(12px + env(safe-area-inset-bottom));
- background:#f8f6f0ed;
- backdrop-filter:blur(14px);
- border-top:1px solid #e9e2d4;
-}
-.sticky-inner{max-width:410px;margin:auto}
-.sticky .download{padding:14px}
-@media(prefers-reduced-motion:reduce){
- .download{animation:none}
+.sticky-download a{
+display:flex;align-items:center;justify-content:center;
+gap:8px;width:min(100%,460px);min-height:48px;
+margin:auto;border:1px solid #ffe3a0;border-radius:12px;
+background:linear-gradient(110deg,#b77c1e,#f5d37e,#c28b2d);
+color:#17120a;font-size:15px;font-weight:900;
+text-decoration:none;box-shadow:0 3px 22px #dba63c40;
 }
 </style>
 </head>
 
 <body>
-<main class="page">
+<main class="wrap">
 
-  <header class="header">
-    <div class="logo">
-      <img src="https://574a81a0-e9bd-4d73-9f02-3df87e218631.lovableproject.com/__l5e/assets-v1/0919920d-72ad-4eb1-8145-6366a1d12180/desi-mtk-logo.png" alt="DSMTK Logo">
-    </div>
-    <h1 class="orbit">DSI <span class="gold">M-T-K</span></h1>
-    <p>OFFICIAL DSMTK APPLICATION</p>
-  </header>
+<div class="topline"><span class="dot"></span> Official DSMTK App</div>
 
-  <section class="hero">
-    <div class="hero-tag">✦ WELCOME TO DSMTK ✦</div>
-    <h2 class="orbit">YOUR APP.<br><span class="gold">YOUR EXPERIENCE.</span></h2>
-    <p>Get the official DSMTK Android application.</p>
+<img class="logo"
+src="https://574a81a0-e9bd-4d73-9f02-3df87e218631.lovableproject.com/__l5e/assets-v1/0919920d-72ad-4eb1-8145-6366a1d12180/desi-mtk-logo.png"
+alt="DSMTK Logo">
 
-    <a class="download"
-       href="https://sumitcric5.github.io/DSMTK-CLASSES/desimatkaApp.apk"
-       download="desimatkaApp.apk"
-       onclick="trackDownload()">
-       ↓ &nbsp; DOWNLOAD APK
-    </a>
-    <p style="margin:12px 0 0;font-size:9px">
-      ANDROID APPLICATION
-    </p>
-  </section>
+<h1>WELCOME TO <span>DSMTK</span></h1>
 
-  <section class="market">
-    <div class="section-title">
-      <h3>MARKET SCHEDULE</h3>
-      <span>DSMTK</span>
-    </div>
+<!-- Main download button -->
+<a class="download"
+href="https://sumitcric5.github.io/DSMTK-CLASSES/desimatkaApp.apk"
+onclick="if(typeof fbq==='function')fbq('trackCustom','AppDownloadClick');">
+⬇ DOWNLOAD APP
+</a>
+<p class="hint">Android App · Direct Download</p>
 
-    <div class="markets">
-      <div class="market-item"><b>DELHI BAZAR</b><small>3:00 PM</small></div>
-      <div class="market-item"><b>SHRI GANESH</b><small>4:30 PM</small></div>
-      <div class="market-item"><b>FARIDABAD</b><small>6:00 PM</small></div>
-      <div class="market-item"><b>GAZIYABAD</b><small>9:30 PM</small></div>
-      <div class="market-item"><b>GALI</b><small>11:30 PM</small></div>
-      <div class="market-item"><b>DESAWAR</b><small>4:30 AM</small></div>
-    </div>
-  </section>
+<div class="section-title">Daily Updates</div>
 
-  <p class="notice">
-    Official application information. Download only from trusted sources.
-    Check applicable local laws and age restrictions before using related services.
-  </p>
-
-  <footer>© 2026 DSMTK · ALL RIGHTS RESERVED</footer>
-
-</main>
-
-<!-- STICKY DOWNLOAD -->
-<div class="sticky">
-  <div class="sticky-inner">
-    <a class="download"
-       href="https://sumitcric5.github.io/DSMTK-CLASSES/desimatkaApp.apk"
-       download="desimatkaApp.apk"
-       onclick="trackDownload()">
-       ↓ &nbsp; DOWNLOAD DSMTK APP
-    </a>
-  </div>
+<div class="markets">
+<div class="market"><strong>DELHI BAZAR</strong><span>3:00 PM</span></div>
+<div class="market"><strong>SHRI GANESH</strong><span>4:30 PM</span></div>
+<div class="market"><strong>FARIDABAD</strong><span>6:00 PM</span></div>
+<div class="market"><strong>GAZIYABAD</strong><span>9:30 PM</span></div>
+<div class="market"><strong>GALI</strong><span>11:30 PM</span></div>
+<div class="market"><strong>DESAWAR</strong><span>4:30 AM</span></div>
 </div>
 
-<script>
-function trackDownload(){
- if(typeof fbq==='function'){
-   fbq('trackCustom','AppDownloadClick',{
-     content_name:'DSMTK Android App'
-   });
- }
-}
-</script>
+<p class="footer">
+DSMTK · Official App
+</p>
+</main>
+
+<!-- Sticky bottom download button -->
+<div class="sticky-download">
+<a href="https://sumitcric5.github.io/DSMTK-CLASSES/desimatkaApp.apk"
+onclick="if(typeof fbq==='function')fbq('trackCustom','AppDownloadClick');">
+⬇ DOWNLOAD APP
+</a>
+</div>
 
 </body>
 </html>
